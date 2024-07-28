@@ -1,0 +1,33 @@
+    //  for bitcoin
+    curl --request GET \
+     --url 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd' \
+     --header 'accept: application/json' \
+     --header 'x-cg-demo-api-key: CG-yANbE565XCxbhp6SkPZH7bmT'
+
+     //  for ethereum
+     curl --request GET \
+     --url 'https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd' \
+     --header 'accept: application/json' \
+     --header 'x-cg-demo-api-key: CG-yANbE565XCxbhp6SkPZH7bmT'
+
+    //  for dogecoin
+    curl --request GET \
+    --url 'https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd' \
+    --header 'accept: application/json' \
+    --header 'x-cg-demo-api-key: CG-yANbE565XCxbhp6SkPZH7bmT'
+
+
+
+    let settings = {
+    "async" : true,
+    "scrossDomain": true,
+    "url-btc": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd",
+    "url-eth": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd",
+    "url-doge": "https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd",
+    "methods": "GET",
+    "headers": {}
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+}) 

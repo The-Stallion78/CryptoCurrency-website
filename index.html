@@ -8,14 +8,71 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- Jquery CDN Link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>CryptoCurrency Website</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><a href="#">Market</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">White Papers</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <a href="#" class="btn">EN</a>
+      </nav>
 
-    
+      <!-- Main Content of Website -->
+      <div class="content">
+        <h1>BUY & <br>SELL <span>Crypto</span></h1>
+        <p>World's biggest CryptoCurrency exchange available on<br> web as well as mobile phone.</p>
+        <a href="#" class="btn">EXPLORE MORE</a>
+      </div>
+
+      <!-- Crypto Currencies List -->
+      <div class="coin-list">
+
+        <!-- Bitcoin -->
+        <div class="coin">
+          <img src="images/bitcoin.png" alt="bitcoin">
+          <div>
+            <h4>$<span id="bitcoin"></span></h4>
+            <p>Bitcoin</p>
+          </div>
+        </div>
+
+        <!-- Ethereum -->
+        <div class="coin">
+          <img src="images/ethereum.png" alt="Ethereum">
+          <div>
+            <h4>$<span id="ethereum"></span></h4>
+            <p>Ethereum</p>
+          </div>
+        </div>
+
+        <!-- Dogecoin -->
+        <div class="coin">
+          <img src="images/dogecoin.png" alt="dogecoin">
+          <div>
+            <h4>$<span id="dogecoin"></span></h4>
+            <p>Doge</p>
+          </div>
+        </div>
+
+        <!-- Similarly we can add for as much cryptos as we want to. -->
+
+      </div>
+
+    </div>
+
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Javascript File -->
     <script src="app.js"></script>
   </body>
 </html>
