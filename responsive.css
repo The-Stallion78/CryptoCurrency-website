@@ -1,19 +1,143 @@
 /* for small screens */
 @media (max-width: 575px) {
+    nav {
+        display: column;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0px;
+    }
+    
+    nav .btn {
+        padding: 10px 22px;
+    }
+    .content {
+        margin-top: 10px;
+    }
+    .content h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .content p {
+        line-height: 15px;
+        font-size: 12px;
+    }
+    
+    .content .btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+        
+    .coin-list{
+        position: static;
+        display: column;
+        align-items: center;
+    }
+
+    .coin {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .coin img {
+        width: 30px;
+    }
+
 }
 
 /* for medium screens */
 @media (min-width: 576px) and (max-width: 768px) {
+    
+    nav ul {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 15px 0px;
+    }
+    
+    nav .btn {
+        padding: 15px 25px;
+    }
+    .content {
+        margin-top: 12px;
+    }
+    .content h1 {
+        font-size: 50px;
+    }
+    
+    
+    .content p {
+        line-height: 17px;
+        font-size: 14px;
+    }
+    
+    .content .btn {
+        padding: 15px 25px;
+    }
+        
+    .coin-list{
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
 
+    .coin {
+        margin: 10px 0px;
+        padding: 15px 25px;
+    }
+
+    .coin img {
+        width: 35px;
+    }
 }
 
 /* for Large screens */
 @media (min-width: 768px) and (max-width: 991px) {
+    .content h1 {
+        font-size: 60px;
+    }
 
+    .coin-list {
+        right: 5%;
+        bottom: 30px;
+        flex-direction: column;
+    }
+
+    .coin {
+        margin: 10px 0;
+        padding: 15px 20px;
+    }
+
+    .coin img {
+        width: 35px;
+    }
 }
 
 /* for Extra large screens */
 @media (min-width: 992px) and (max-width: 1200px) {
-    
+    .content h1 {
+        font-size: 72px;
+    }
+
+    .coin-list {
+        right: 5%;
+    }
+
+    .coin {
+        padding: 15px 25px;
+    }
+
+    .coin img {
+        width: 35px;
+    }
 }
 
